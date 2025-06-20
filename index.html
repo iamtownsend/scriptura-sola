@@ -102,13 +102,45 @@
       text-decoration: none;
       font-weight: bold;
     }
+    .header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.header-logo {
+  width: 100px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  background-color: #fff;
+  padding: 0.5rem;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 1.1rem;
+}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Scriptura (Sola)</h1>
-    <p>Your companion for inductive Bible study – free and grounded</p>
-  </header>
+ <header>
+  <div class="header-content">
+    <img src="images/scriptura-logo.png" alt="Scriptura Logo" class="header-logo" />
+    <div class="header-text">
+      <h1>Scriptura (Sola)</h1>
+      <p>Your companion for inductive Bible study – free and grounded</p>
+    </div>
+  </div>
+</header>
   <main>
     <div class="buttons">
       <a href="https://poe.com/ScripturaSola" target="_blank">Try Free Version on Poe</a>
