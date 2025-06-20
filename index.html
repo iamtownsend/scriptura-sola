@@ -6,39 +6,54 @@
   <title>Scriptura (Sola) – Inductive Bible Study</title>
   <style>
     body {
-      font-family: Georgia, serif;
-      background-color: #fefae0; /* parchment cream */
-      color: #003049; /* deep blue */
+      font-family: 'Georgia', serif;
+      background-color: #fefae0; /* soft parchment */
+      color: #002855; /* rich navy */
       line-height: 1.6;
       margin: 0;
       padding: 0;
     }
     header {
       background: #fcbf49; /* golden yellow */
-      color: #003049;
-      padding: 1.5rem;
+      color: #002855;
+      padding: 2rem 1rem;
       text-align: center;
     }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
     main {
-      padding: 2rem;
-      max-width: 960px;
+      padding: 2rem 1rem;
+      max-width: 900px;
       margin: auto;
     }
-    h1, h2, h3 {
-      color: #003049;
+    .buttons {
+      text-align: center;
+      margin: 1.5rem 0;
     }
     .buttons a {
       display: inline-block;
-      background: #003049;
+      background-color: #002855;
       color: #fefae0;
       text-decoration: none;
       padding: 0.75rem 1.5rem;
       margin: 0.5rem;
       border-radius: 5px;
       font-weight: bold;
+      transition: background-color 0.3s;
     }
     .buttons a:hover {
-      background: #f77f00; /* vivid orange */
+      background-color: #f77f00;
+    }
+    h2 {
+      color: #002855;
+      border-bottom: 2px solid #fcbf49;
+      padding-bottom: 0.3rem;
     }
     ul {
       padding-left: 1.4rem;
@@ -50,26 +65,32 @@
     }
     .column {
       flex: 1;
-      min-width: 280px;
-      margin: 1rem;
-      background: #fff;
+      min-width: 260px;
+      background: #ffffff;
       border: 1px solid #ccc;
       border-radius: 8px;
       padding: 1rem;
+      margin: 1rem;
+    }
+    .column h3 {
+      margin-top: 0;
     }
     .kofi {
       text-align: center;
-      margin-top: 2.5rem;
+      margin-top: 3rem;
     }
     .footer {
       text-align: center;
       font-size: 0.9rem;
       color: #555;
-      margin-top: 2.5rem;
+      margin: 3rem 0 1rem;
     }
     .footer a {
-      color: #003049;
+      color: #002855;
       text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -79,54 +100,53 @@
     <p>AI-Powered Inductive Bible Study Tool</p>
   </header>
   <main>
-    <section class="buttons">
-      <a href="https://poe.com/ScripturaSola" target="_blank">Try Scriptura on Poe (Free)</a>
-      <a href="https://chat.openai.com/g/g-6855870026ec819185dd1a24a27615c3-scriptura-solo-the-inductive-bible-study-guide?model=gpt-4o" target="_blank">Try Scriptura on ChatGPT+ (Full)</a>
-    </section>
+    <div class="buttons">
+      <a href="https://poe.com/ScripturaSola" target="_blank">Try Free Version on Poe</a>
+      <a href="https://chat.openai.com/g/g-6855870026ec819185dd1a24a27615c3-scriptura-solo-the-inductive-bible-study-guide?model=gpt-4o" target="_blank">Try Pro Version on ChatGPT+</a>
+    </div>
 
     <h2>What Scriptura (Sola) Helps You Do</h2>
     <ul>
-      <li>Practice inductive Bible study (Observation → Interpretation → Application)</li>
-      <li>Explore repetition, structure, literary context, and historical backdrop</li>
-      <li>Get verse breakdowns and verse charting assistance</li>
-      <li>Ask genre-specific questions and perform basic thematic searches</li>
-      <li>Access Strong’s numbers (ChatGPT+ version only)</li>
+      <li>Follow inductive study steps: Observation → Interpretation → Application</li>
+      <li>Ask guided questions and avoid theological bias</li>
+      <li>Study by verse, chapter, book, or topic</li>
+      <li>Practice charting, context tracing, and character study</li>
+      <li>Use Strong’s concordance (ChatGPT+ only)</li>
     </ul>
 
     <h2>What It Won’t Do</h2>
     <ul>
-      <li>Force a doctrinal interpretation</li>
-      <li>Skip the text and jump straight to life application</li>
-      <li>Preach or replace your own study or spiritual discernment</li>
+      <li>Impose doctrinal interpretations or replace personal study</li>
+      <li>Skip inductive process to give quick answers</li>
+      <li>Assume your life context — it asks you to reflect instead</li>
     </ul>
 
     <div class="comparison">
       <div class="column">
         <h3>Poe Version (Free)</h3>
         <ul>
-          <li>Free and accessible with message limits</li>
-          <li>Structured inductive flow</li>
-          <li>Strong’s: limited lookup only</li>
-          <li>No file export or memory</li>
-          <li>Embeddable on websites</li>
+          <li>No account required (limited messages per day)</li>
+          <li>All inductive logic built-in</li>
+          <li>Accessible via mobile and web</li>
+          <li>Faster initial setup</li>
+          <li>Cannot export study files</li>
         </ul>
       </div>
       <div class="column">
         <h3>ChatGPT+ Version ($20/mo)</h3>
         <ul>
-          <li>Full Strong’s dictionary support (Greek + Hebrew)</li>
-          <li>Can export studies as PDF, Word, and PowerPoint</li>
-          <li>Persistent memory for deeper study tracking</li>
-          <li>Accesses uploads and performs file generation</li>
-          <li>Better formatting and response refinement</li>
+          <li>Uses full Strong’s Hebrew + Greek files</li>
+          <li>Can generate PDF, Word, and PowerPoint studies</li>
+          <li>Remembers uploads and tracks progress</li>
+          <li>Better formatting and structured sessions</li>
         </ul>
       </div>
     </div>
 
     <div class="kofi">
-      <p>If this tool blesses you, consider supporting it here:</p>
+      <p>If this tool blesses you, please consider supporting:</p>
       <a href="https://ko-fi.com/L3L81BFNJ8" target="_blank">
-        <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi">
+        <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support on Ko-fi">
       </a>
     </div>
 
