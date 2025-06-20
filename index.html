@@ -94,6 +94,7 @@
       text-align: center;
     }
 
+    .image-box picture,
     .image-box img {
       max-width: 100%;
       height: auto;
@@ -171,7 +172,14 @@
         </div>
       </div>
       <div class="image-box">
-        <img src="images/scriptura-logo.png" alt="Scriptura Sola Icon" style="max-width: 100%; border-radius: 10px;">
+        <picture>
+          <source srcset="./images/scriptura-logo.png" type="image/png">
+          <img
+            src="./images/scriptura-logo.png"
+            alt="Scriptura Sola Icon"
+            onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/iamtownsend/scriptura-sola/main/images/scriptura-logo.png';"
+          >
+        </picture>
       </div>
     </div>
 
@@ -188,3 +196,4 @@
   </main>
 </body>
 </html>
+
